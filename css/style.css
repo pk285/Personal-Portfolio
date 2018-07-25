@@ -15,27 +15,50 @@
 
 /* Icons */
 
+/* Text */
+/* Home Page */
 .text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 30px;
 }
-
+/* Experience */
 .text1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #008080;
 }
-
+/* Experience */
 .text2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
 }
-
+/* Experience */
 .text3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #008080;
     text-decoration: underline;
 }
+/* Portfolio */
+.text4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #008080;
+}
 
+a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #008080;
+}
+
+a:hover {
+    color: #008080;
+}
+
+a:active {
+    color: #008080;
+}
+
+a:visited {
+    color: #008080;
+}
 
 /* Footer */
 
