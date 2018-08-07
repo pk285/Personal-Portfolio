@@ -15,6 +15,22 @@
 
 /* Icons */
 
+/* Parallax*/
+
+.parallax { 
+    /* The image used */
+    background-image: url(../images/prahasimain.jpg);
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Text */
 /* Home Page */
 .text {
@@ -40,6 +56,12 @@
 .text4 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #008080;
+}
+
+.text6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 30px;
 }
 
 a {
