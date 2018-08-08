@@ -225,6 +225,27 @@ a:visited {
     animation-delay: 2.1s;
 }
 
+#progress-research {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+#progress-illustrator {
+    -webkit-animation-name: progress-asp;
+    animation-name: progress-asp;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+#progress-wordpress {
+    -webkit-animation-name: progress-asp;
+    animation-name: progress-asp;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+
 .progressblue {
     background-color: #008080;
 }
@@ -283,6 +304,33 @@ a:visited {
     }
 }
 
+@-webkit-keyframes progress-research {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes progress-illustrator {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes progress-wordpress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
 @-moz-keyframes progress-htmlcss {
     0% {
         width: 0%;
@@ -337,6 +385,33 @@ a:visited {
     }
 }
 
+@-moz-keyframes progress-research {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes progress-illustrator {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes progress-wordpress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
 @keyframes progress-htmlcss {
     0% {
         width: 0%;
@@ -388,5 +463,32 @@ a:visited {
     }
     100% {
         width: 40%;
+    }
+}
+
+@keyframes progress-research {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progress-illustrator {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress-wordpress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
     }
 }
