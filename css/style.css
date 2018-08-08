@@ -31,6 +31,21 @@
     background-size: cover;
 }
 
+.parallax2 { 
+    /* The image used */
+    background-image: url(../images/wf.jpg);
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /* Text */
 /* Home Page */
 .text {
@@ -102,4 +117,276 @@ a:visited {
 
 .footer a:hover {
     color: white;
+}
+
+/* Skills */
+/* Kudos to codepen user */
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+.skill {
+    color: black;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.skills-bar-container {
+    position: relative;
+    width: 40%;
+    min-width: 350px;
+    margin: 5% auto;
+    list-style: none;
+}
+
+.skills-bar-container li {
+    background: #666666;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 35px;
+    margin-top: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.skills-bar-container label {
+    color: black;
+    position: relative;
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#progress-htmlcss {
+    -webkit-animation-name: progress-htmlcss;
+    animation-name: progress-htmlcss;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+#progress-jsjq {
+    -webkit-animation-name: progress-jsjq;
+    animation-name: progress-jsjq;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+#progress-bootstrap {
+    -webkit-animation-name: progress-bootstrap;
+    animation-name: progress-bootstrap;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+
+#progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+#progress-asp {
+    -webkit-animation-name: progress-asp;
+    animation-name: progress-asp;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+#progress-sql {
+    -webkit-animation-name: progress-sql;
+    animation-name: progress-sql;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+
+.progressblue {
+    background-color: #008080;
+}
+
+@-webkit-keyframes progress-htmlcss {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes progress-jsjq {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes progress-bootstrap {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@-webkit-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@-webkit-keyframes progress-asp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-webkit-keyframes progress-sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@-moz-keyframes progress-htmlcss {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@-moz-keyframes progress-jsjq {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes progress-bootstrap {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@-moz-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@-moz-keyframes progress-asp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes progress-sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progress-htmlcss {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progress-jsjq {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progress-bootstrap {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progress-asp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes progress-sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
 }
