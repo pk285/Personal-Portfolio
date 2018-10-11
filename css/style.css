@@ -34,6 +34,9 @@
 .bgI.third{
     background-image: url(../images/picturemainp.png);
 }
+.bgI.fourth{
+    background-image: url(../images/picturemainp.png);
+}
 .frame{
     width:100%;
      height: 100vh;
@@ -48,7 +51,9 @@
 .edu2{
     margin-left:8vw;
 }
-
+.con2{
+    margin-left:8vw;
+}
 label {
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -63,14 +68,18 @@ label {
     float: right;
     margin-left: 1vw;
     margin-right:1vw;
-    
 }
-.card.exp{
-     width: 22.5vw;
+.card.con{
+    width: 22.5vw;
     height: 40vh;
     margin-left: 1.25vw;
     margin-right:1.25vw;
-    
+}
+.card.exp{
+    width: 22.5vw;
+    height: 40vh;
+    margin-left: 1.25vw;
+    margin-right:1.25vw; 
 }
 .card.edu {
     width: 40vw;

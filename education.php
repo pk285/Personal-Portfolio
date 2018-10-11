@@ -5,8 +5,7 @@
                     <input type="checkbox"  />
                 <div class="card edu">
                     <div class="front">
-                <img class="card-img-top" src="images/nsu.jpg" alt="NSU">
-                        <h4 class="card-title">Nova Southeastern University</h4>
+                        <img class="card-img-top" src="images/nsu.jpg" alt="NSU">
                     </div>
                         <div class="back">
                         <p class="card-text">MS, Computer Science (Software Engineering)</p>
@@ -19,7 +18,6 @@
                 <div class="card edu">
                     <div class="front">
                     <img class="card-img-top" src="images/nsu.jpg" alt="NSU">
-                        <h4 class="card-title">Nova Southeastern University</h4>
                         </div>
                     <div class="back">
                         <p class="card-text">BS, Information Technology</p>
