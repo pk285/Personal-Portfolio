@@ -1,51 +1,133 @@
 /* Custom CSS */
-
 /* Main Photo */
-
 .mainphoto {
     height: 100%;
     width: 100%;
     margin: 0;
 }
-
 .no-padding {
     padding-left: 0;
     padding-right: 0;
 }
-
 /* Icons */
-
 /* Parallax*/
-
-.parallax { 
-    /* The image used */
-    background-image: url(../images/prahasimain.jpg);
-
-    /* Set a specific height */
-    height: 400px; 
-
-    /* Create the parallax scrolling effect */
+#plx{
+    height: 600vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.bgI{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    display:flex;
+    position: relative;
+}
+.bgI.first{
+    background-image: url(../images/picturemainp.png);
+}
+.bgI.second{
+    background-image: url(../images/picturemainp.png);
+}
+.bgI.third{
+    background-image: url(../images/picturemainp.png);
+}
+.frame{
+    width:100%;
+     height: 100vh;
+    text-align: center;
+    align-content: center;
+    background-color:#343a40;
+    position: relative;
+}
+.exp2{
+    margin-left:12.5vw;
+}
+.edu2{
+    margin-left:8vw;
 }
 
-.parallax2 { 
-    /* The image used */
-    background-image: url(../images/wf.jpg);
-
-    /* Set a specific height */
-    height: 400px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
 }
-
-
+.card.port{
+    width: 40vw;
+    height: 75vh;
+    float: right;
+    margin-left: 1vw;
+    margin-right:1vw;
+    
+}
+.card.exp{
+     width: 22.5vw;
+    height: 40vh;
+    margin-left: 1.25vw;
+    margin-right:1.25vw;
+    
+}
+.card.edu {
+    width: 40vw;
+    height: 75vh;
+    float: right;
+    margin-left: 1vw;
+    margin-right:1vw;
+}
+.card {
+    position: relative;
+    width: 100%;
+    height:100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+    background-color: white;
+}
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: white;
+        text-align: center;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+.card front{
+    background-color: white;
+}
+    .card .back {
+        background: white;
+        color: black;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+input {
+    display: none;
+}
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+.card-deck{
+   width:100%;
+}
 /* Text */
 /* Home Page */
 .text {
@@ -78,26 +160,20 @@
     color: #ffffff;
     font-size: 30px;
 }
-
 a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: black
 }
-
 a:hover {
     color: black;
 }
-
 /* a:active {
     color: #008080;
 } */
-
 /* a:visited {
     color: #008080;
 } */
-
 /* Footer */
-
 .footer {
     position: relative;
     left: 0;
@@ -107,388 +183,12 @@ a:hover {
     color: white;
     text-align: center;
 }
-
 .footer a {
     color: white;
     font-size: 30px;
     padding: 10px;
     transition: all .5s ease;
 }
-
 .footer a:hover {
     color: white;
-}
-
-/* Skills */
-/* Kudos to codepen user */
-
-#left {
-    float: left;
-}
-
-#right {
-    float: right;
-}
-
-.skill {
-    color: black;
-    margin-left: 0px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 25px;
-}
-
-.skills-bar-container {
-    position: relative;
-    width: 40%;
-    min-width: 350px;
-    margin: 5% auto;
-    list-style: none;
-}
-
-.skills-bar-container li {
-    background: #666666;
-    position: relative;
-    width: 100%;
-    height: 25px;
-    margin-bottom: 35px;
-    margin-top: 8px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.skills-bar-container label {
-    color: black;
-    position: relative;
-    margin-left: 0px;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.progressbar {
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-#progress-htmlcss {
-    -webkit-animation-name: progress-htmlcss;
-    animation-name: progress-htmlcss;
-    -webkit-animation-delay: .7s;
-    animation-delay: .7s;
-}
-
-#progress-jsjq {
-    -webkit-animation-name: progress-jsjq;
-    animation-name: progress-jsjq;
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1.4s;
-}
-
-#progress-bootstrap {
-    -webkit-animation-name: progress-bootstrap;
-    animation-name: progress-bootstrap;
-    -webkit-animation-delay: 2.1s;
-    animation-delay: 2.1s;
-}
-
-#progress-java {
-    -webkit-animation-name: progress-java;
-    animation-name: progress-java;
-    -webkit-animation-delay: .7s;
-    animation-delay: .7s;
-}
-
-#progress-asp {
-    -webkit-animation-name: progress-asp;
-    animation-name: progress-asp;
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1.4s;
-}
-
-#progress-sql {
-    -webkit-animation-name: progress-sql;
-    animation-name: progress-sql;
-    -webkit-animation-delay: 2.1s;
-    animation-delay: 2.1s;
-}
-
-#progress-research {
-    -webkit-animation-name: progress-java;
-    animation-name: progress-java;
-    -webkit-animation-delay: .7s;
-    animation-delay: .7s;
-}
-
-#progress-illustrator {
-    -webkit-animation-name: progress-asp;
-    animation-name: progress-asp;
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1.4s;
-}
-
-#progress-wordpress {
-    -webkit-animation-name: progress-asp;
-    animation-name: progress-asp;
-    -webkit-animation-delay: 2.1s;
-    animation-delay: 2.1s;
-}
-
-.progressblue {
-    background-color: #008080;
-}
-
-@-webkit-keyframes progress-htmlcss {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@-webkit-keyframes progress-jsjq {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-webkit-keyframes progress-bootstrap {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 25%;
-    }
-}
-
-@-webkit-keyframes progress-java {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 75%;
-    }
-}
-
-@-webkit-keyframes progress-asp {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@-webkit-keyframes progress-sql {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-webkit-keyframes progress-research {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@-webkit-keyframes progress-illustrator {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-webkit-keyframes progress-wordpress {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 25%;
-    }
-}
-
-@-moz-keyframes progress-htmlcss {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@-moz-keyframes progress-jsjq {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@-moz-keyframes progress-bootstrap {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 25%;
-    }
-}
-
-@-moz-keyframes progress-java {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 75%;
-    }
-}
-
-@-moz-keyframes progress-asp {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@-moz-keyframes progress-sql {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@-moz-keyframes progress-research {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@-moz-keyframes progress-illustrator {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@-moz-keyframes progress-wordpress {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 25%;
-    }
-}
-
-@keyframes progress-htmlcss {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes progress-jsjq {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@keyframes progress-bootstrap {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes progress-java {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@keyframes progress-asp {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@keyframes progress-sql {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 40%;
-    }
-}
-
-@keyframes progress-research {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes progress-illustrator {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes progress-wordpress {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
 }
